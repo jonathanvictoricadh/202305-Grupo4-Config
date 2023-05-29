@@ -14,14 +14,14 @@ spring:
           uri: lb://api-check
           predicates:
             - Path=/api/v1/check/**
-        - id: mscustumer
+        - id: mscustomer
           uri: lb://api-customer
           predicates:
-            - Path=/api/v1/check/customer/**
+            - Path=/api/v1/customer/**
         - id: msprovider
           uri: lb://api-provider
           predicates:
-            - Path=/api/v1/check/provider/**
+            - Path=/api/v1/provider/**
           
 
 info:
