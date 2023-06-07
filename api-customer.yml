@@ -3,11 +3,13 @@ server:
 spring:
   application:
     name: api-customer
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/checkAgro-dev
-    username: usr-checkAgro
-    password: pwd-checkAgro
+  data:
+    mongodb:
+      username: usr-customer-mongo
+      password: pwd-customer-mongo
+      database: customer-dev-mongo
+      port: 27017
+      host: localhost
 
   jpa:
     generate-ddl: true
