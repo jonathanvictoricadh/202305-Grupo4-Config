@@ -5,8 +5,8 @@ spring:
     name: api-customer
   data:
     mongodb:
-      username: usr-customer-mongo
-      password: pwd-customer-mongo
+      username: 
+      password: 
       database: customer-dev-mongo
       port: 27017
       host: localhost
